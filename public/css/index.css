@@ -1,0 +1,282 @@
+@charset "UTF-8";
+/* reset */
+body, h1, h2, h3, h4, h5, h6, p, address,
+ul, ol, li, dl, dt, dd, img, form, table, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 100%;
+	text-align: left;
+	list-style-type: none;
+	border-collapse: collapse;
+}
+
+textarea { font-size: 100%; vertical-align:middle;}
+img { border-style: none; display: block; }
+hr { display: none; }
+em{font-style: normal}
+input{line-height:auto;vertical-align:middle;}
+strong.more{color:#c30}
+a{text-decoration: none;
+    color:inherit;}
+
+
+body {
+	font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+/*ーーーー*/
+
+html {
+    font-size: 100%;
+  }
+  body {
+    color: #24292e;
+  }
+  a {
+    text-decoration: none;
+  }
+  img {
+    max-width: 100%;
+  }
+  li {
+    list-style: none;
+  }
+  
+  .wrapper {
+    max-width: 960px;
+    margin: 0 auto 130px auto;
+    font-size: 0.9rem;
+    padding: 0 4%;
+  }
+  .site-title {
+    line-height: 1px;
+  }
+  .site-title a {
+    display: block;
+  }
+  .sec-title {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 65px;
+  }
+
+  /*botann*/
+
+.btn_item {
+  display: flex;
+  justify-content: center;
+  color: #343434;
+   border-radius: 5px; 
+}
+
+.btn_item:hover {
+  text-decoration: underline;
+}
+
+.btn_item li  {
+  display: flex;
+  text-align: center;
+  margin-left: 30px;
+}
+
+.liked {
+  color: pink;
+}
+
+/*-------------------------------------------
+ヘッダー
+-------------------------------------------*/
+#header  {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 170px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color:rgb(244, 244, 244);
+  }
+  #header ul {
+    display: flex;
+    padding: 10px 0;
+  }
+  #header li {
+    font-size: 18px;
+    margin-left: 30px;
+  }
+  #header li a {
+    color: #24292e;
+  }
+  #header li a:hover {
+    opacity: 0.7;
+  }
+  #header li img.icon {
+    width: 20px;
+  }
+
+  /*-------------------------------------------
+Mainvisual
+-------------------------------------------*/
+#mainvisual {
+    margin-bottom: 80px;
+  }
+  #mainvisual img {
+    width: 100%;
+    max-width: 1920px;
+    height: 420px;
+    object-fit: cover;
+  }
+  
+
+  /*-------------------------------------------
+フッター
+-------------------------------------------*/
+#footer {
+    background-color: #24292e;
+    color: #fff;
+    font-size: 0.5rem;
+    padding: 10px 20px;
+    text-align: center;
+  }
+
+  /*-------------------------------------------
+Contact
+-------------------------------------------*/
+#contact dl {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+#contact dt {
+  width: 15%;
+}
+#contact dd {
+  width: 85%;
+  margin-bottom: 10px;
+}
+#contact dd input,
+#contact dd textarea {
+  width: 100%;
+  border: solid 1px #c8c8c8;
+  padding: 10px;
+}
+#contact dd textarea {
+  height: 10rem;
+}
+#contact .button {
+  text-align: center;
+}
+#contact .button input {
+  width: 200px;
+  background-color: #24292e;
+  color: #fff;
+  padding: 15px 0;
+  border: solid 1px #24292e;
+}
+#contact .button input:hover {
+  background: #fff;
+  color: #24292e;
+}
+
+
+
+
+  /* container */
+.wrapper{
+    width:100%;
+    align-items: center;
+    
+    text-align:center;
+    padding:30px;
+    
+}
+.wrapper .container{
+    max-width:1000px;
+    margin:0px auto;
+    padding:10px 0px;
+}
+
+
+/* content */
+.wrapper .content{
+    margin:0px auto;
+    padding:50px;
+    text-align:center;
+}
+.wrapper .content .heading{
+    margin:0px 0px 40px 0px;
+    padding : 20px ;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+   
+}
+
+div{
+  padding : 20px ;
+}
+
+.wrapper img{
+    margin:0px auto;
+    max-width: 300px;
+    height: 200px;
+    object-fit: cover;
+  }
+
+
+  /*-------------------------------------------
+SP
+-------------------------------------------*/
+@media screen and (max-width: 600px) {
+  .wrapper {
+    margin-bottom: 70px;
+  }
+  .site-title {
+    margin-top: 20px;
+  }
+  .sec-title {
+    margin-bottom: 40px;
+  }
+
+  /*-------------------------------------------
+  ヘッダー
+  -------------------------------------------*/
+  #header {
+    max-width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+  #header li {
+    font-size: 0.8rem;
+    margin-left: 20px;
+  }
+  #header li:first-child {
+    margin-left: 0;
+  }
+
+  
+  /*-------------------------------------------
+  Contact
+  -------------------------------------------*/
+  #contact dl {
+    flex-direction: column;
+  }
+  #contact dt {
+    width: 100%;
+  }
+  #contact dd {
+    width: 100%;
+  }
+}
