@@ -28,9 +28,9 @@ PHP自作
 
 テストアカウント：
 
-メールアドレス→ syusai@com.jp
+メールアドレス→ test@test.jp
 
-パスワード→syusaitest
+パスワード→pass0001
 
 一般ユーザー
 
@@ -38,9 +38,9 @@ PHP自作
 
 テストアカウント：
 
-メールアドレス→ test.test@com.jp
+メールアドレス→ aa@aa.jp
 
-パスワード→パステスト
+パスワード→phppass06
 
 
 
