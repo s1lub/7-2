@@ -2,7 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
-    <title>reviewtop</title>
+    <title>reviewなし</title>
     <link rel="stylesheet" type="text/css" href="{{ asset('css/index.css')  }}">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -48,6 +48,8 @@
           <div class="button"><input id="btn" type="submit" value="送信"></div>
         </form>
       </section>
+
+
 
 
 
